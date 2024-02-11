@@ -18,8 +18,8 @@
   			</div>
   		</div>
 
-  		<!-- SidebarSearch Form
-  		<div class="form-inline">
+
+  		<!-- <div class="form-inline">
   			<div class="input-group" data-widget="sidebar-search">
   				<input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
   				<div class="input-group-append">
@@ -33,6 +33,16 @@
   		<!-- Sidebar Menu -->
   		<nav class="mt-2">
   			<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+
+  				<li class="nav-item">
+  					<a href="<?php echo site_url('Dashboard') ?>" class="nav-link active">
+  						<i class="nav-icon fas fa-chart-area"></i>
+  						<p>
+  							Dashboard
+  							<i class="right fas fa-angle-left"></i>
+  						</p>
+  					</a>
+  				</li>
 
   				<li class="nav-item">
   					<a href="#" class="nav-link">
@@ -82,19 +92,51 @@
   						</li>
   					</ul>
   				</li>
-  				
+
+				
+
+  				<li class="nav-item">
+  					<a href="#" class="nav-link">
+  						<i class="nav-icon fas fa-chart-pie"></i>
+  						<p>
+  							Chart
+  							<i class="right fas fa-angle-left"></i>
+  						</p>
+  					</a>
+  					<ul class="nav nav-treeview">
+  						<li class="nav-item">
+  							<a href="<?php echo site_url('Uji_Chart') ?>" class="nav-link">
+  								<i class="far fa-circle nav-icon"></i>
+  								<p>ChartJS</p>
+  							</a>
+  						</li>
+  						<li class="nav-item">
+  							<a href="<?php echo site_url('Uji_Chart') ?>" class="nav-link">
+  								<i class="far fa-circle nav-icon"></i>
+  								<p>Flot</p>
+  							</a>
+  						</li>
+  						<li class="nav-item">
+  							<a href="<?php echo site_url('Chart3') ?>" class="nav-link">
+  								<i class="far fa-circle nav-icon"></i>
+  								<p>Inline</p>
+  							</a
+
   			</ul>
   			</li>
-
-
-
-  			
-
-
-
   			</ul>
   		</nav>
   		<!-- /.sidebar-menu -->
   	</div>
   	<!-- /.sidebar -->
   </aside>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  	$(document).ready(function() {
+  		$('.nav-link').on('click', function() {
+  			$('.nav-link').removeClass('active');
+  			$(this).addClass('active');
+  		});
+  	});
+  </script>

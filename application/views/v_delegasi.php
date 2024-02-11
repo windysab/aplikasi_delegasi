@@ -69,7 +69,7 @@
 												<th>NOMOR SURAT</th>
 												<th>TANGGAL SURAT</th>
 												<th>TANGAL SIDANG</th>
-												<th>TANGGAL RESI</th>
+												
 												<th>TANGGAL TERIMA</th>
 												<th>TANGGAL DISPOSISI</th>
 												<th>TANGGAL RELAAS</th>
@@ -99,7 +99,7 @@
 													<td><?php echo $row->nomor_surat ?></td>
 													<td><?php echo $row->tgl_surat ?></td>
 													<td><?php echo $row->tgl_sidang ?></td>
-													<td><?php echo $row->tgl_resi ?></td>
+													
 													<td><?php echo $row->tgl_surat_diterima ?></td>
 													<td><?php echo $row->tgl_penunjukan_jurusita ?></td>
 													<td><?php echo $row->tgl_relaas ?></td>
