@@ -85,9 +85,9 @@
   							</a>
   						</li>
   						<li class="nav-item">
-  							<a href="<?php echo site_url('Rekapitulasi_pn') ?>" class="nav-link">
+  							<a href="<?php echo site_url('Delegasi_k') ?>" class="nav-link">
   								<i class="far fa-circle nav-icon"></i>
-  								<p>Rekapitulasi PN</p>
+  								<p>Delegasi Keluar</p>
   							</a>
   						</li>
   					</ul>
